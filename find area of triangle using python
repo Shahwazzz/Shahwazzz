@@ -1,17 +1,23 @@
-#find area of triangle
-
 def find_area(h , b):
     area_of_triangle = (h*b)/2
     return area_of_triangle
 
+again = False
 
-
-height = float(input("Enter height :"))
-base = float(input("Enter base :"))
-
-answer = find_area(height , base)
-
-print(f"Area of triangle = {answer}")
-
+while not again:
+    
+    height = float(input("Enter height :"))
+    base = float(input("Enter base :"))
+    
+    answer = find_area(height , base)
+    
+    print(f"Area of triangle = {answer}")
+    
+    again_run = input("Do you want to run again type y for yes and n for no : ")
+    
+    
+    if again_run == "n":
+        again = True
+        print("Thanks for using our program")
 
 
