@@ -1,0 +1,17 @@
+#find area of triangle
+
+def find_area(h , b):
+    area_of_triangle = (h*b)/2
+    return area_of_triangle
+
+
+
+height = float(input("Enter height :"))
+base = float(input("Enter base :"))
+
+answer = find_area(height , base)
+
+print(f"Area of triangle = {answer}")
+
+
+
