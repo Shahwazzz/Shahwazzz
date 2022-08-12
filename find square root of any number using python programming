@@ -1,0 +1,13 @@
+Find the square root
+#using exponential
+num1 = int(input("Enter the number : "))
+
+sr = num1**(1/2)
+print(f"square root of {num1} = {sr}")
+
+
+#using math module
+import math
+number = int(input("Enter the number : "))
+sr = math.sqrt(number)
+print(f"square root of {number} = {sr}")
