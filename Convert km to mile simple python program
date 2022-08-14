@@ -1,0 +1,7 @@
+#Convert kilometer into mile
+
+value = float(input("Enter km to convert into mile : "))
+
+mile = value *0.621371
+
+print(f"mile is = {mile}")
