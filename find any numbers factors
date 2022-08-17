@@ -1,0 +1,24 @@
+#find factors of any number
+
+#using for loop
+def factors(x):
+    for i in range(2 , x+1):
+        if x%i==0:
+            print(i)
+number = int(input("Enter number"))  
+factors(number)
+
+
+#using while loop
+
+def my_factors(x):
+    
+    i = 1
+    while i <= x:
+        if x%i == 0:
+            print(i)
+        i+=1    
+         
+number = int(input("Enter number : " ))
+
+my_factors(number)
