@@ -1,0 +1,64 @@
+#Lets make simple calculator
+
+
+def add(a , b):
+    return a+b
+    
+def sub(a , b):
+    return a-b
+    
+def multiply(a , b):
+    return a*b
+    
+def division(a , b):
+    return a/b
+    
+    
+
+
+def calci():
+    number1 = int(input("Enter first number : " ))
+    
+    is_it = False
+    
+    while not is_it:
+        
+        
+        my_dictionary = {
+        "+"  : add ,
+        "-"  : sub,
+        "*" : multiply,
+        "/" : division
+    }
+    
+    
+        for i in my_dictionary:
+            print(i)
+            
+        symbol = input("Enter operations : " )    
+        
+        number2 =int(input("Enter second number :" ))
+        
+        operation = my_dictionary[symbol]
+        pass_parameter = operation(number1 , number2)
+        
+        result = pass_parameter
+        
+        print(f"{number1} {symbol} {number2} = {result}")
+        
+        
+        again = input(f"Again operation with  {result} type 'y' for yes and 'n' for no:")
+        
+        if again == "y":
+            number1 = result
+        else:
+            is_it = True
+            calci()
+            
+calci()            
+                
+            
+    
+    
+
+ 
