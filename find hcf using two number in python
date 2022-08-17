@@ -1,0 +1,23 @@
+#find hcf between two numbers
+
+
+def hcf (x , y):
+    if x>y:
+        smaller = y
+    else:
+        smaller = x
+    
+    z = 1
+    
+    while z <= smaller :
+        if (x%z==0) and (y%z==0):
+            hcf2 = z
+        z+=1
+    return hcf2
+           
+            
+number1= int(input("Enter number1 :"))
+number2 = int(input("Enter number2:"))
+
+total=hcf(number1 , number2)
+print(total)
