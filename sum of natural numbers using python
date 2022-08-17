@@ -1,0 +1,17 @@
+#find sum of natural number
+#natural numbers
+#using for loop
+
+def natural_numbers (x , y):
+    sum = 0
+    
+    for i in range(x , y+1):
+        sum +=i
+    print(sum)
+    
+number1 = int(input("Enter lower number " ))
+number2 = int(input("Enter upper number " ))
+
+natural_numbers(number1 , number2)
+
+
